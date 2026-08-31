@@ -115,3 +115,10 @@ def test_sampling_is_reproducible_and_wilson_contains_estimate():
     assert first == second
     assert sum(first.values()) == 1000
     assert interval[0] < first["10001000"] / 1000 < interval[1]
+
+
+def test_result_numbers_have_stable_precision():
+    first = 0.32882792417459905
+    second = 0.328827924174599
+
+    assert PROOF.canonicalize_numbers(first) == PROOF.canonicalize_numbers(second)

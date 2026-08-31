@@ -43,6 +43,7 @@ MAX_AMPLITUDE = 8.0
 PULSE_DURATION_NS = 5000
 LAYOUT_SEED = 24098
 EMULATED_SHOTS = 10_000
+RESULT_SIGNIFICANT_DIGITS = 12
 
 
 @dataclass(frozen=True)
@@ -343,6 +344,16 @@ def wilson_interval(successes: int, trials: int,
     return center - margin, center + margin
 
 
+def canonicalize_numbers(value):
+    if isinstance(value, float):
+        return float(f"{value:.{RESULT_SIGNIFICANT_DIGITS}g}")
+    if isinstance(value, dict):
+        return {key: canonicalize_numbers(item) for key, item in value.items()}
+    if isinstance(value, (list, tuple)):
+        return [canonicalize_numbers(item) for item in value]
+    return value
+
+
 def analyze_repair(repair: Repair8) -> dict:
     coordinates, layout_error = fit_layout(repair)
     geometry = layout_metrics(repair, coordinates)
@@ -434,7 +445,7 @@ def main() -> int:
     parser.add_argument("manifest", type=Path)
     parser.add_argument("--out", type=Path)
     args = parser.parse_args()
-    result = analyze_manifest(args.manifest)
+    result = canonicalize_numbers(analyze_manifest(args.manifest))
     text = json.dumps(result, indent=2) + "\n"
     if args.out:
         args.out.write_text(text)
