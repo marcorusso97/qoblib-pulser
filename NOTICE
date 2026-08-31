@@ -1,0 +1,7 @@
+The frozen benchmark cases in cases.json are derived from the QOBLIB Steiner
+tree packing repair corpus:
+
+https://github.com/ZIB-AOPT/QOBLIB
+
+QOBLIB code is distributed under Apache-2.0 and its benchmark data under
+CC BY 4.0. Source filenames and SHA-256 hashes are preserved in cases.json.

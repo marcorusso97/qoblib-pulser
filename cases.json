@@ -1,0 +1,81 @@
+{
+  "schema": "qoblib-pulser-eight-atom-v1",
+  "selection_rule": "First five repair files in lexical order whose first two four-candidate pools have distinct feasible costs and at most three cross-pool conflicts; geometry is accepted only when every physical ground state is an exact repair optimum. No emulator outcome is used for selection.",
+  "cases": [
+    {
+      "source_file": "sub_00013.json",
+      "source_sha256": "484fcc2e6d1405ce388f1e50d67e32c80f5427bc885d32b277d93e3a8fd2225d",
+      "candidates": [
+        {"net": 2, "candidate": 0, "cost": 36.0},
+        {"net": 2, "candidate": 1, "cost": 36.0},
+        {"net": 2, "candidate": 2, "cost": 37.0},
+        {"net": 2, "candidate": 3, "cost": 41.0},
+        {"net": 3, "candidate": 0, "cost": 13.0},
+        {"net": 3, "candidate": 1, "cost": 13.0},
+        {"net": 3, "candidate": 2, "cost": 13.0},
+        {"net": 3, "candidate": 3, "cost": 18.0}
+      ],
+      "conflict_pairs": [[0, 1], [0, 2], [0, 3], [1, 2], [1, 3], [2, 3], [4, 5], [4, 6], [4, 7], [5, 6], [5, 7], [6, 7]]
+    },
+    {
+      "source_file": "sub_00018.json",
+      "source_sha256": "7bb88a5b73072172025a4526ba97b4fe8de1196906bed4b03bb1c9e11a4b3782",
+      "candidates": [
+        {"net": 2, "candidate": 0, "cost": 36.0},
+        {"net": 2, "candidate": 1, "cost": 36.0},
+        {"net": 2, "candidate": 2, "cost": 36.0},
+        {"net": 2, "candidate": 3, "cost": 38.0},
+        {"net": 3, "candidate": 0, "cost": 13.0},
+        {"net": 3, "candidate": 1, "cost": 13.0},
+        {"net": 3, "candidate": 2, "cost": 13.0},
+        {"net": 3, "candidate": 3, "cost": 19.0}
+      ],
+      "conflict_pairs": [[0, 1], [0, 2], [0, 3], [1, 2], [1, 3], [2, 3], [4, 5], [4, 6], [4, 7], [5, 6], [5, 7], [6, 7]]
+    },
+    {
+      "source_file": "sub_00031.json",
+      "source_sha256": "bf1e3585200a9dd671f11ffdc7d29ba00f01d2ca66ce4c9a9dad3a3d7ddc17e6",
+      "candidates": [
+        {"net": 1, "candidate": 0, "cost": 31.0},
+        {"net": 1, "candidate": 1, "cost": 31.0},
+        {"net": 1, "candidate": 2, "cost": 31.0},
+        {"net": 1, "candidate": 3, "cost": 34.0},
+        {"net": 4, "candidate": 0, "cost": 41.0},
+        {"net": 4, "candidate": 1, "cost": 41.0},
+        {"net": 4, "candidate": 2, "cost": 41.0},
+        {"net": 4, "candidate": 3, "cost": 44.0}
+      ],
+      "conflict_pairs": [[0, 1], [0, 2], [0, 3], [1, 2], [1, 3], [2, 3], [3, 4], [4, 5], [4, 6], [4, 7], [5, 6], [5, 7], [6, 7]]
+    },
+    {
+      "source_file": "sub_00032.json",
+      "source_sha256": "8455e96ec2c8195eed44ad786c4331f892ff89a277c37066ced2a90d19d01433",
+      "candidates": [
+        {"net": 1, "candidate": 0, "cost": 31.0},
+        {"net": 1, "candidate": 1, "cost": 31.0},
+        {"net": 1, "candidate": 2, "cost": 31.0},
+        {"net": 1, "candidate": 3, "cost": 36.0},
+        {"net": 2, "candidate": 0, "cost": 36.0},
+        {"net": 2, "candidate": 1, "cost": 36.0},
+        {"net": 2, "candidate": 2, "cost": 36.0},
+        {"net": 2, "candidate": 3, "cost": 40.0}
+      ],
+      "conflict_pairs": [[0, 1], [0, 2], [0, 3], [1, 2], [1, 3], [2, 3], [4, 5], [4, 6], [4, 7], [5, 6], [5, 7], [6, 7]]
+    },
+    {
+      "source_file": "sub_00035.json",
+      "source_sha256": "ef538d56827119716e723c351518aba426e4f8c2bab2d168dce4aeab359d200d",
+      "candidates": [
+        {"net": 2, "candidate": 0, "cost": 36.0},
+        {"net": 2, "candidate": 1, "cost": 36.0},
+        {"net": 2, "candidate": 2, "cost": 36.0},
+        {"net": 2, "candidate": 3, "cost": 40.0},
+        {"net": 3, "candidate": 0, "cost": 11.0},
+        {"net": 3, "candidate": 1, "cost": 11.0},
+        {"net": 3, "candidate": 2, "cost": 11.0},
+        {"net": 3, "candidate": 3, "cost": 14.0}
+      ],
+      "conflict_pairs": [[0, 1], [0, 2], [0, 3], [1, 2], [1, 3], [2, 3], [4, 5], [4, 6], [4, 7], [5, 6], [5, 7], [6, 7]]
+    }
+  ]
+}
