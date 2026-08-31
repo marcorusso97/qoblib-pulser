@@ -22,8 +22,9 @@ hardware feasibility certificate.
 Two original LNS nets retain all four candidates:
 
 $$
-N=k m=2\times4=8,\qquad |\mathcal F_{\mathrm{one-hot}}|=4^2=16,
-\qquad \dim\mathcal H=2^8=256.
+N = k m = 2 \times 4 = 8, \qquad
+|\mathcal{F}_{\mathrm{one-hot}}| = 4^{2} = 16, \qquad
+\dim \mathcal{H} = 2^{8} = 256.
 $$
 
 The emulator evolves the full 256-state system. Feasibility is not imposed during
@@ -50,8 +51,9 @@ reproduced from the tracked manifest and source hashes.
 The emulator uses
 
 $$
-H(t)=\frac{\Omega(t)}2\sum_i\sigma_i^x-\delta(t)\sum_i n_i
-     +\sum_{i<j}\frac{C_6}{r_{ij}^6}n_i n_j.
+H(t) = \frac{\Omega(t)}{2} \sum_i \sigma_i^x
+- \delta(t) \sum_i n_i
++ \sum_{i < j} \frac{C_6}{r_{ij}^{6}} n_i n_j.
 $$
 
 Same-net pairs and cross-net conflicts are assigned to the high-interaction class.
@@ -60,7 +62,7 @@ classical candidate cost. The deterministic layout fitter first enforces the ene
 separation
 
 $$
-V_{\mathrm{hard}}>\delta_f>V_{\mathrm{allowed}},
+V_{\mathrm{hard}} > \delta_f > V_{\mathrm{allowed}},
 $$
 
 and only then minimizes cost-order distortion. The shared schedule uses a 5,000 ns
