@@ -51,9 +51,7 @@ reproduced from the tracked manifest and source hashes.
 The emulator uses
 
 $$
-H(t) = \frac{\Omega(t)}{2} \sum_i \sigma_i^x
-- \delta(t) \sum_i n_i
-+ \sum_{i < j} \frac{C_6}{r_{ij}^{6}} n_i n_j.
+H(t) = \frac{\Omega(t)}{2} \sum_i \sigma_i^x - \delta(t) \sum_i n_i + \sum_{i < j} \frac{C_6}{r_{ij}^{6}} n_i n_j.
 $$
 
 Same-net pairs and cross-net conflicts are assigned to the high-interaction class.
